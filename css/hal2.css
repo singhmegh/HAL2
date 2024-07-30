@@ -260,11 +260,3 @@ width:100%;
   
  }
 }
-
-/*for mobile screen*/
-@media (max-width:767px){
-
-  .card{
-padding: 0.3rem 0.5rem;
-  }
-}

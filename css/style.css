@@ -210,3 +210,44 @@
     color: var(--text-white);
   }
   
+  
+/*for mobile screen*/
+@media (max-width:767px){
+  h2{
+    font-size: 0.25rem;
+}
+h4{
+  font-size: 0.5rem;
+}
+span{
+  font-size: 0.575rem;
+}
+.main-btn{
+  font-size: .75rem;
+  line-height: 1rem;
+  padding: .5rem .625rem;
+}
+.tag{
+  font-size: 1.8rem;
+}
+}
+
+@media (max-width:676px){
+  h2{
+    font-size: 0.15rem;
+}
+h4{
+  font-size: 0.421rem;
+}
+span{
+  font-size: 0.575rem;
+}
+.main-btn{
+  font-size: .75rem;
+  line-height: 1rem;
+  padding: .5rem .625rem;
+}
+.tag{
+  font-size: 1.4rem;
+}
+}
