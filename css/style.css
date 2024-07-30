@@ -219,7 +219,7 @@
 h4{
   font-size: 0.5rem;
 }
-span{
+.span{
   font-size: 0.575rem;
 }
 .main-btn{
@@ -237,10 +237,10 @@ span{
     font-size: 0.15rem;
 }
 h4{
-  font-size: 0.421rem;
+  font-size: 1.321rem;
 }
-span{
-  font-size: 0.575rem;
+.span{
+  font-size: 1.475rem;
 }
 .main-btn{
   font-size: .75rem;
@@ -249,5 +249,10 @@ span{
 }
 .tag{
   font-size: 1.4rem;
+}
+.card-wrap{
+  display: block;
+  padding: 0;
+  margin: 20%;
 }
 }
