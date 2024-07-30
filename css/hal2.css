@@ -84,13 +84,13 @@
   
 /*navigation-wrap*/
 .navigation-wrap{
-    background-color: var(--primary-color);
+   background-color: var(--primary-color);
 
 }
 .navigation-wrap .nav-link:hover {
     color: var(--secoundry--color);
   }
-.navigation-wrap .nav-link a{
+ .nav-link {
     color: var(--white-color);
 }
 
@@ -147,15 +147,18 @@
     height: calc(100% + 0.2857rem);
   }
   .wrapper {
-    padding-top: 6.25rem;
+
     padding-bottom: 6.25rem;
   }
 
   /*slide*/
   .carousel-inner {
-    width: 70vw;
-    margin-left: 12%;
-    margin-top: 5%;
+   /* width: 70vw;*/
+margin: auto;
+    
+  }
+  .carousel-item img{
+    height:600px;
   }
   
   .carousel-control-prev {
@@ -170,7 +173,11 @@
     width: 6%;
     opacity: 0;
   }
-
+/*cards*/
+.card-body{
+  padding:0.6rem ;
+  
+}
 /*footer section*/
 .footer {
     background: var(--black-color);

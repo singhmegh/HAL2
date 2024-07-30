@@ -108,8 +108,8 @@
 .navigation-wrap .nav-link:hover {
     color: var(--secoundry--color);
   }
-.navigation-wrap .nav-link a{
-    color: var(--white-color);
+.nav-link {
+    color: var(--text-white);
 }
 
 .navigation-wrap .navbar-brand img {
