@@ -195,6 +195,17 @@ margin: auto;
   .footer p {
     color: var(--text-white);
   }
+   /* temp-image */
+.temp-image {
+  height: 600px;
+  width: 100%;
+}
+.nav-link.disabled {
+  color: #888888;
+}
+
+
+
   
  /* for  small laptop screen */
   @media (max-width: 1200px) {
