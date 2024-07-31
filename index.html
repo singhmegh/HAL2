@@ -17,11 +17,11 @@
     />
 
     <!--main CSS-->
-    <link rel="stylesheet" href="css/hal2.css">
+    <link rel="stylesheet" href="css/hal2.css" />
   </head>
   <body>
     <!--Navbar-->
-    
+
     <nav class="navbar navbar-expand-lg navigation-wrap">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
@@ -40,9 +40,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item ">
+            <li class="nav-item">
               <a
-                class="nav-link "
+                class="nav-link"
                 href="index.html"
                 aria-current="page"
                 href="#"
@@ -154,7 +154,7 @@
               </ul>
             </li>
           </ul>
-         <!--<form class="d-flex" role="search">
+          <!--<form class="d-flex" role="search">
             <input
               class="form-control me-2"
               type="search"
@@ -165,7 +165,7 @@
           </form>-->
           <div class="mx-1">
             <button
-            id="loginBtn"
+              id="loginBtn"
               class="main-btn style-1"
               data-bs-toggle="modal"
               data-bs-target="#LoginModal"
@@ -173,7 +173,7 @@
               Login
             </button>
             <button
-            id="signupBtn"
+              id="signupBtn"
               class="main-btn style-1"
               data-bs-toggle="modal"
               data-bs-target="#SignupModal"
@@ -190,282 +190,391 @@
           </div>
         </div>
       </div>
-    </nav>    
-    
+    </nav>
+
     <!--login Modal -->
-<div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form id="loginForm">
-          <div class="mb-3">
-            <label for="loginName1" class="form-label">Username</label>
-            <input type="name" class="form-control" id="loginEmail1">
-            <div id="emailHelp" class="form-text">We'll never share your info. with anyone else.</div>
+    <div
+      class="modal fade"
+      id="LoginModal"
+      tabindex="-1"
+      aria-labelledby="LoginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
           </div>
-          <div class="mb-3">
-            <label for="loginPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="loginPassword1">
+          <div class="modal-body">
+            <form id="loginForm">
+              <div class="mb-3">
+                <label for="loginName1" class="form-label">Username</label>
+                <input type="name" class="form-control" id="loginEmail1" />
+                <div id="emailHelp" class="form-text">
+                  We'll never share your info. with anyone else.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="loginPassword1" class="form-label">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="loginPassword1"
+                />
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="Check1" />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Check me out</label
+                >
+              </div>
+              <button type="submit" class="btn btn-primary">Login</button>
+            </form>
           </div>
-          <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="Check1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
           </div>
-          <button type="submit" class="btn btn-primary">Login</button>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-      
+        </div>
       </div>
     </div>
-  </div>
-</div>
-         
-<!-- signup Modal -->
-<div class="modal fade" id="SignupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Get an account</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form id ="signupForm">
-          <div class="mb-3">
-            <label for="signupName1" class="form-label">Name</label>
-            <input type="name" class="form-control" id="signupName1">
-            <div id="emailHelp" class="form-text">Your info.. will be safe with us</div>
+
+    <!-- signup Modal -->
+    <div
+      class="modal fade"
+      id="SignupModal"
+      tabindex="-1"
+      aria-labelledby="signupModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Get an account</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
           </div>
-          <div class="mb-3">
-            <label for="signupEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="signupEmail1" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          <div class="modal-body">
+            <form id="signupForm">
+              <div class="mb-3">
+                <label for="signupName1" class="form-label">Name</label>
+                <input type="name" class="form-control" id="signupName1" />
+                <div id="emailHelp" class="form-text">
+                  Your info.. will be safe with us
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="signupEmail1" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="signupEmail1"
+                  aria-describedby="emailHelp"
+                />
+                <div id="emailHelp" class="form-text">
+                  We'll never share your email with anyone else.
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="signupPassword1" class="form-label">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="signupPassword1"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="signupPassword2" class="form-label"
+                  >Confirm Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="signupPassword2"
+                />
+              </div>
+
+              <button type="submit" class="btn btn-primary">
+                create account
+              </button>
+            </form>
           </div>
-          
-          <div class="mb-3">
-            <label for="signupPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="signupPassword1">
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
           </div>
-          <div class="mb-3">
-            <label for="signupPassword2" class="form-label">Confirm Password</label>
-            <input type="password" class="form-control" id="signupPassword2">
-          </div>
-          
-          <button type="submit" class="btn btn-primary">create account</button>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-      
+        </div>
       </div>
     </div>
-  </div>
-</div>
 
-<div id="temp-access">
-  <img src="images/bg.jpg" class="temp-image" />
-</div>
+    <div id="temp-access">
+      <img src="images/bg.jpg" class="temp-image" />
+    </div>
 
-<div id="main-content" style="display: none">
-
-    <!--slides-->
-    <div id="carouselExampleIndicators" class="carousel slide">
-      <div class="carousel-indicators">
+    <div id="main-content" style="display: none">
+      <!--slides-->
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/images2.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="images/img8.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="images/mig21.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="images/tejas.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="images/a11.jpg" class="d-block w-100" alt="..." />
+          </div>
+        </div>
         <button
+          class="carousel-control-prev"
           type="button"
           data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
         <button
+          class="carousel-control-next"
           type="button"
           data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="3"
-          aria-label="Slide 4"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="4"
-          aria-label="Slide 5"
-        ></button>
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="images/images2.jpg" class="d-block w-100" alt="..." />
-        </div>
-        <div class="carousel-item">
-          <img src="images/img8.jpg" class="d-block w-100" alt="..." />
-        </div>
-        <div class="carousel-item">
-          <img src="images/mig21.jpg" class="d-block w-100" alt="..." />
-        </div>
-        <div class="carousel-item">
-          <img src="images/tejas.jpg" class="d-block w-100" alt="..." />
-        </div>
-        <div class="carousel-item">
-          <img src="images/a11.jpg" class="d-block w-100" alt="..." />
-        </div>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="prev"
+
+      <!--Cards-->
+      <div
+        class="row m-auto mt-4"
+        data-masonry='{"percentPosition": true }'
+        style="position: relative; height: 687.332px"
       >
-        <span
-          class="carousel-control-prev-icon"
-          aria-hidden="true"
-        ></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="next"
-      >
-        <span
-          class="carousel-control-next-icon"
-          aria-hidden="true"
-        ></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-
-    <!--Cards-->
-    <div class="row" data-masonry="{&quot;percentPosition&quot;: true }" style="position: relative; height: 687.332px;">
-        <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 0px;">
+        <div
+          class="col-sm-6 col-lg-4 mb-4"
+          style="position: absolute; left: 0%; top: 0px"
+        >
           <div class="card">
-            <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="images/b1.png"><img/>
-    
+            <img
+              class="bd-placeholder-img card-img-top"
+              width="100%"
+              height="200"
+              src="images/b1.png"
+            /><img />
+
             <div class="card-body">
-                <a href="html/birthday.html">
-              <h5 class="card-title">Today's Birthday</h5>
-              <p class="card-text">Wishing you a fantastic day filled with joy and laughter. Thank you for all your hard work and dedication. Enjoy your special day.</p>
+              <a href="html/birthday.html">
+                <h5 class="card-title">Today's Birthday</h5>
+                <p class="card-text">
+                  Wishing you a fantastic day filled with joy and laughter.
+                  Thank you for all your hard work and dedication. Enjoy your
+                  special day.
+                </p>
               </a>
             </div>
           </div>
         </div>
-        <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 33.3325%; top: 0px;">
+        <div
+          class="col-sm-6 col-lg-4 mb-4"
+          style="position: absolute; left: 33.3325%; top: 0px"
+        >
           <div class="card p-3">
             <figure class="p-3 mb-0">
               <blockquote class="blockquote">
-                <p>"To believe in something, and not to live it, is dishonest."</p>
+                <p>
+                  "To believe in something, and not to live it, is dishonest."
+                </p>
               </blockquote>
               <figcaption class="blockquote-footer mb-0 text-muted">
-                 <cite title="Source Title">Mahatma Gandhi</cite>
+                <cite title="Source Title">Mahatma Gandhi</cite>
               </figcaption>
             </figure>
           </div>
         </div>
-        <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 66.6649%; top: 0px;">
+        <div
+          class="col-sm-6 col-lg-4 mb-4"
+          style="position: absolute; left: 66.6649%; top: 0px"
+        >
           <div class="card">
-            <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="images/b2.jpeg"><img/>
-    
-            <div class="card-body" id="#Superannuation"><a href="html/birthday.html">
-              <h5 class="card-title">Superannuation</h5>
-              <p class="card-text">"Do not save what is left after spending, but spend what is left after saving.".</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <img
+              class="bd-placeholder-img card-img-top"
+              width="100%"
+              height="200"
+              src="images/b2.jpeg"
+            /><img />
+
+            <div class="card-body" id="#Superannuation">
+              <a href="html/birthday.html">
+                <h5 class="card-title">Superannuation</h5>
+                <p class="card-text">
+                  "Do not save what is left after spending, but spend what is
+                  left after saving.".
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
               </a>
             </div>
           </div>
         </div>
-        <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 33.3325%; top: 170.333px;">
+        <div
+          class="col-sm-6 col-lg-4 mb-4"
+          style="position: absolute; left: 33.3325%; top: 170.333px"
+        >
           <div class="card text-bg-primary text-center p-3">
             <figure class="mb-0">
               <blockquote class="blockquote">
                 <p>Announcements</p>
               </blockquote>
               <figcaption class="blockquote-footer mb-0 text-white">
-                <cite title="Source Title">This card shows all the New Announcements .</cite>
+                <cite title="Source Title"
+                  >This card shows all the New Announcements .</cite
+                >
               </figcaption>
             </figure>
           </div>
         </div>
-        <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 33.3325%; top: 308.666px;">
+        <div
+          class="col-sm-6 col-lg-4 mb-4"
+          style="position: absolute; left: 33.3325%; top: 308.666px"
+        >
           <div class="card text-center">
             <div class="card-body">
               <h5 class="card-title">Speacial's Occasion</h5>
               <p class="card-text">This cards shows info. about Occasion.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <p class="card-text">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </p>
             </div>
           </div>
         </div>
-      <!-- <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 361.333px;">
+        <!-- <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 361.333px;">
           <div class="card">
             <img class="bd-placeholder-img card-img" width="100%" height="260" src=""></img>
     
           </div>
         </div>-->
-        <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 66.6649%; top: 377.333px;">
+        <div
+          class="col-sm-6 col-lg-4 mb-4"
+          style="position: absolute; left: 66.6649%; top: 377.333px"
+        >
           <div class="card p-3 text-end">
             <figure class="mb-0">
               <blockquote class="blockquote">
                 <p>"भविष्य इस पर निर्भर करता है कि आप आज क्या करते हैं।</p>
               </blockquote>
               <figcaption class="blockquote-footer mb-0 text-muted">
-                 <cite title="Source Title"> महात्मा गांधी</cite>
+                <cite title="Source Title"> महात्मा गांधी</cite>
               </figcaption>
             </figure>
           </div>
         </div>
-        <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 33.3325%; top: 485.999px;">
+        <div
+          class="col-sm-6 col-lg-4 mb-4"
+          style="position: absolute; left: 33.3325%; top: 485.999px"
+        >
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">New updates</h5>
               <p class="card-text">This cards shows all the current updates</p>
-              <p class="card-text"><small class="text-muted">Last updated 2 mins ago</small></p>
+              <p class="card-text">
+                <small class="text-muted">Last updated 2 mins ago</small>
+              </p>
             </div>
           </div>
         </div>
       </div>
-        </div>   
-    
+    </div>
+
     <!--Footer-->
     <footer id="footer">
       <div class="footer py-5">
         <div class="container">
           <div class="row">
-           
-              <div class="footer-social pt-4 text-center">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              </div>
+            <div class="footer-social pt-4 text-center">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
             </div>
-            <div class="col-sm-12">
-              <div class="text-center pt-5">
-                <div class="text-light">
-                  <p>&copy;1940- <span id="demo"></span> All rights are reserved by H.A.L</p>
-                </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="text-center pt-5">
+              <div class="text-light">
+                <p>
+                  &copy;1940- <span id="demo"></span> All rights are reserved by
+                  H.A.L
+                </p>
               </div>
             </div>
           </div>
         </div>
-      
-    
+      </div>
     </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
@@ -473,7 +582,12 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+      crossorigin="anonymous"
+      async
+    ></script>
 
     <!--main js-->
     <script src="../js/hal.js"></script>
