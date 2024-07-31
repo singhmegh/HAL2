@@ -75,7 +75,7 @@ function showMainContent() {
         event.preventDefault();
   
         //access the email and password
-        const email = document.getElementById("loginName1").value;
+        const email = document.getElementById("loginEmail1").value;
         const password = document.getElementById("loginPassword1").value;
   
         //fetching the details from localStorage
