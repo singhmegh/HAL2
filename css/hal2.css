@@ -178,6 +178,12 @@ margin: auto;
   padding:0.6rem ;
   
 }
+.card:hover{
+  transition-duration: 150ms;
+  box-shadow: 0 5px 20px 5px var(--black-color);
+}
+
+
 /*footer section*/
 .footer {
     background: var(--black-color);
