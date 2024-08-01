@@ -112,7 +112,7 @@ function showMainContent() {
   
   //function to validate the email
   function validateEmail(email) {
-    let re = /\S+@\S+\.\S+/;
+    let re = /\S+@\S+\.\S+/;       //check the email format//
     return re.test(email);
   }
   
