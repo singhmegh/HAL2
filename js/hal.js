@@ -1,5 +1,4 @@
-
-    // Function to handle showing main content and enabling navbar links
+// Function to handle showing main content and enabling navbar links
 function showMainContent() {
     document.getElementById("main-content").style.display = "block";
     document.getElementById("temp-access").style.display = "none";
@@ -129,3 +128,14 @@ const d = new Date();
 let year = d.getFullYear();
 document.getElementById("demo").innerHTML = year;
 
+//floater
+var close = document.getElementsByClassName("closebtn");
+var i;
+
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function(){
+    var div = this.parentElement;
+    div.style.opacity = "0";
+    setTimeout(function(){ div.style.display = "none"; }, 600);
+  }
+}

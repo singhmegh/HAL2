@@ -154,7 +154,7 @@
   /*slide*/
   .carousel-inner {
    /* width: 70vw;*/
-margin: auto;
+     margin: auto;
     
   }
   .carousel-item img{
@@ -208,6 +208,25 @@ margin: auto;
 }
 .nav-link.disabled {
   color: #888888;
+}
+
+.alert {
+  width: 20%;
+  padding: 20px;
+  margin-top: 12px;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.6s;
+  margin-bottom: 15px;
+cursor: pointer;
+}
+.alert.info {
+  background-color:var(--secoundry--color);
+
+}
+.alert:hover{
+  transition-duration: 150ms;
+  box-shadow: 0 5px 20px 5px var(--black-color);
 }
 
 
